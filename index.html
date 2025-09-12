@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Waste Classifier</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header>
+        <h1><i class="fas fa-leaf"></i> Waste Classifier</h1>
+        <p>Upload an image to classify waste as recyclable or organic</p>
+      </header>
+
+      <!-- Main Content -->
+      <div class="content">
+        <!-- Upload Section -->
+        <div class="upload-box">
+          <h2>Upload Image</h2>
+          <div class="upload-area" id="uploadArea">
+            <div class="upload-content" id="uploadContent">
+              <i class="fas fa-cloud-upload-alt"></i>
+              <h3>Drop image here or click to browse</h3>
+              <button id="browseBtn">Choose File</button>
+              <input type="file" id="fileInput" accept="image/*" hidden />
+              <small>Supports: JPG, PNG, JPEG (Max 10MB)</small>
+            </div>
+
+            <div class="image-display" id="imageDisplay" hidden>
+              <img
+                id="uploadedImage"
+                src="/placeholder.svg"
+                alt="Uploaded image"
+              />
+              <div class="image-info">
+                <p id="fileName">filename.jpg</p>
+                <small>Ready to classify</small>
+              </div>
+            </div>
+
+            <div class="loading" id="loading" hidden>
+              <div class="spinner"></div>
+              <p>Analyzing image...</p>
+            </div>
+          </div>
+
+          <div class="upload-actions" id="uploadActions" hidden>
+            <button id="classifyBtn">Classify</button>
+            <button id="clearBtn">Clear</button>
+          </div>
+        </div>
+
+        <!-- Results Section -->
+        <div class="results-box">
+          <h2>Classification Results</h2>
+          <div class="results-area">
+            <div class="no-results" id="noResults">
+              <i class="fas fa-camera"></i>
+              <h3>No image analyzed yet</h3>
+              <p>
+                Upload an image to see AI-powered waste classification results
+                with detailed disposal instructions
+              </p>
+            </div>
+
+            <div class="results" id="results" hidden>
+              <div class="result-header">
+                <div class="result-icon" id="resultIcon">
+                  <i id="resultIconType" class="fas fa-recycle"></i>
+                </div>
+                <h3 id="resultType">Recyclable</h3>
+                <div class="confidence">
+                  Confidence: <span id="confidenceValue">95%</span>
+                </div>
+              </div>
+
+              <div class="result-details">
+                <div class="description-section">
+                  <h4><i class="fas fa-info-circle"></i> What is this?</h4>
+                  <p id="resultDescription">This item can be recycled.</p>
+                </div>
+
+                <div class="environmental-impact">
+                  <h4><i class="fas fa-globe"></i> Environmental Impact</h4>
+                  <p id="environmentalInfo">
+                    Environmental impact information will appear here.
+                  </p>
+                </div>
+
+                <div class="disposal-section">
+                  <h4>
+                    <i class="fas fa-recycle"></i> How to dispose properly:
+                  </h4>
+                  <ol id="disposalSteps"></ol>
+                </div>
+
+                <div class="tips-section">
+                  <h4><i class="fas fa-lightbulb"></i> Additional Tips</h4>
+                  <ul id="additionalTips"></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
