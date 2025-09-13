@@ -7,8 +7,7 @@ Proyek deep learning dengan menggunakan **CNN (Convolutional Neural Network)** u
 ---
 
 ## 📂 Dataset
-Sumber: *Waste Classification Data* (Kaggle)  
-- Total: **25.100 gambar**  
+-- Total: **25.100 gambar**  
   - Training set: 22.599 gambar  
   - Test set: 2.513 gambar  
 
@@ -29,7 +28,7 @@ Sumber: *Waste Classification Data* (Kaggle)
 ---
 
 ## 🚀 Cara Menjalankan
-1. Buka folder "Deploy" pada VS Code
+1.  Clone repository ini pada VS Code: "git clone https://github.com/SamuelKrishnaD/Waste_Classifier.git"  
 2. Lalu install dependencies (buka terminal dan jalankan "pip install -r requirements.txt" pada terminal)
 2. Run file app.py atau bisa menjalankan "python app.py" pada terminal
 3. Untuk mengecek tampilan web dapat menggunakan extension "Live Server" pada VsCode atau menjalankan file index.html
