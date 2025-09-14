@@ -1,37 +1,39 @@
 # ♻️ Waste Classifier (CNN MobileNetV2)
 
-Proyek deep learning dengan menggunakan **CNN (Convolutional Neural Network)** untuk klasifikasi gambar sampah menjadi 2 kelas:
-- **Organik**
-- **Daur Ulang (Recyclable)**
+A deep learning project using Convolutional Neural Networks (CNNs) to classify waste images into two categories:
+- **Organic**
+- **Recyclable**
 
 ---
 
 ## 📂 Dataset
--- Total: **25.100 gambar**  
-  - Training set: 22.599 gambar  
-  - Test set: 2.513 gambar  
+- Total: **25.100 images**  
+  - Training set: 22,599 images
+  - Test set: 2,513 images
 
 ### Preprocessing
 - Rescaling  
 - Data augmentation: random flip, rotation, zoom  
 - Prefetching & parallel mapping  
-- Menghapus gambar corrupt/tidak kompatibel dengan TensorFlow  
+- Removed corrupted or incompatible images with TensorFlow
 
 ---
 
-## 📊 Hasil
-- **Akurasi:** 88%  
+## 📊 Results
+- **Accuracy:** 88%  
 - **F1-score:** 88%  
 - **Recall:** 88%  
 - **Precision:** 88%  
 
 ---
 
-## 🚀 Cara Menjalankan
-1.  Clone repository ini pada VS Code: "git clone https://github.com/SamuelKrishnaD/Waste_Classifier.git"  
-2. Lalu install dependencies (buka terminal dan jalankan "pip install -r requirements.txt" pada terminal)
-2. Run file app.py atau bisa menjalankan "python app.py" pada terminal
-3. Untuk mengecek tampilan web dapat menggunakan extension "Live Server" pada VsCode atau menjalankan file index.html
-4. Untuk melakukan klasifikasi bisa memasukan file gambar pada tombol "Choose File" lalu tekan tombol "Classify"
-5. Untuk melakukan klasifikasi pada gambar lain, tekan tombol "Clear" terlebih dahulu. Setelah itu bisa memasukkan gambar lainnya dengan cara yang sama
+## 🚀 How to Run
+1.  Clone this repository in VS Code: "git clone https://github.com/SamuelKrishnaD/Waste_Classifier.git"  
+2. Install dependencies (run "pip install -r requirements.txt" on the terminal)
+2. Run the app ("app.py") or run "python app.py" on the terminal
+3. To preview the web interface:
+     - Use the Live Server extension in VS Code
+     - Open index.html directly in your browser.
+5. To classify an image: upload it using the "Choose File" button and click "Classify".
+6. To classify another image: click "Clear" first, then upload the new file.
 
