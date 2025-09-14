@@ -27,6 +27,17 @@ A deep learning project using Convolutional Neural Networks (CNNs) to classify w
 
 ---
 
+## 📖 Project Description
+This group project is an assignment for the Machine Learning course in my 4th semester of college. I contributed to the **entire machine learning pipeline**:
+- Conducted dataset search and selection from Kaggle and other sources  
+- Performed **data preprocessing** (rescaling, augmentation, cleaning corrupted files)  
+- Trained and evaluated a **CNN model (MobileNetV2)** for binary classification (organic vs. recyclable)  
+- Deployed the model with a simple **frontend (HTML, CSS, JS)** and **backend (Flask/Python)** for real-time image classification  
+
+Through this project, I learned how to build a complete ML workflow from **data collection → training → evaluation → deployment**, apply artificial intelligence to address a practical real-world problem (waste management), and how to integrate an ML model into a **web-based interface** for easier user interaction
+
+---
+
 ## 🚀 How to Run
 1.  Clone this repository in VS Code: "git clone https://github.com/SamuelKrishnaD/Waste_Classifier.git"  
 2. Install dependencies (run "pip install -r requirements.txt" on the terminal)
